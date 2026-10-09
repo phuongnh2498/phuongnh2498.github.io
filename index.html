@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phuong · Projects</title>
+  <meta name="description" content="Small tools that do real work: a phone debugger, a video factory, self-running deal pages and code-made video ads.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    // Apply the saved theme before paint so there's no flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t } catch {}
+  </script>
+  <script type="module" crossorigin src="./assets/index-C3DUgdci.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C0Ya8GP9.css">
+</head>
+<body>
+  <!-- Shared SVG: film-grain filter used by the drawn backgrounds -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </svg>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Home"><span class="mascot mascot-sm" aria-hidden="true"><i></i><i></i></span>Phuong</a>
+      <nav class="links">
+        <a href="#work">Projects</a>
+        <a href="#jobs">What they do</a>
+        <a href="#stack">Stack</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-soft" href="#contact">Contact</a>
+        <a class="btn btn-dark" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero wrap">
+      <a class="announce reveal" href="#work"><b><span id="projCount">4</span> projects shipped</b> · See the latest <span class="arrow">↗</span></a>
+      <h1 class="hero-title reveal">Hi, I’m <span class="mascot mascot-lg" aria-hidden="true"><i></i><i></i></span> Phuong</h1>
+      <p class="hero-sub reveal">I build small tools that do real work. They debug my phone, make product videos and run deal pages while I sleep.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-dark btn-lg" href="#work">See projects</a>
+        <a class="btn btn-soft btn-lg" href="#contact">Get in touch</a>
+      </div>
+
+      <div class="window reveal" id="heroWindow">
+        <aside class="win-side">
+          <div class="win-bar"><i class="dot r"></i><i class="dot y"></i><i class="dot g"></i><span class="plus">+</span></div>
+          <div class="search">Search projects</div>
+          <ul class="threads" id="threads"></ul>
+          <div class="me"><span class="avatar">PH</span>Phuong</div>
+        </aside>
+        <div class="win-main">
+          <div class="win-head"><span class="badge-dot" id="paneDot"></span><span id="paneName"></span><span class="win-kind" id="paneKind"></span></div>
+          <div class="pane" id="pane"></div>
+          <div class="composer"><span class="plus">+</span><span id="composerText">Ask about this project</span><span class="mic">●</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Band -->
+    <section class="wrap">
+      <div class="band reveal">
+        <div class="band-copy">
+          <h2>Built to work while I sleep</h2>
+          <p>Every project here runs a real job end to end. It starts as a note in my ideas folder, and once I’ve done the job by hand three times, it becomes a tool.</p>
+        </div>
+        <div class="band-art" aria-hidden="true"><span class="mascot mascot-xl blink"><i></i><i></i></span></div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="wrap section" id="work">
+      <h2 class="h2 center reveal">Everything I’ve shipped</h2>
+      <p class="lede center reveal">Four projects, one workspace. Each one has its own folder, its own stack and a job it does on its own.</p>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- Jobs -->
+    <section class="wrap section jobs" id="jobs">
+      <div class="jobs-copy">
+        <h2 class="h2 reveal">Give each project a job</h2>
+        <div class="pills" id="pills" role="tablist"></div>
+        <p class="job-text" id="jobText"></p>
+        <a class="btn btn-soft" href="#contact">Ask me about it</a>
+      </div>
+      <div class="phone reveal" aria-hidden="true">
+        <div class="phone-notch"></div>
+        <div class="phone-screen" id="phoneScreen"></div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="wrap section" id="stack">
+      <h2 class="h2 center reveal">What I build with</h2>
+      <div class="stack" id="stackCards"></div>
+      <div class="stack-bar reveal">
+        <span class="spin" aria-hidden="true">↻</span>
+        <span>Want to see the code? <span class="muted">Most projects live in one workspace.</span></span>
+        <a class="btn btn-line" href="https://github.com/" target="_blank" rel="noopener">Open GitHub</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="wrap section faq" id="faq">
+      <h2 class="h2 reveal">FAQs</h2>
+      <div class="faq-list" id="faqList"></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="wrap cta" id="contact">
+      <h2 class="h2 reveal">Let’s build something</h2>
+      <p class="reveal">Have a job you do by hand every week? Tell me about it.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-dark btn-lg" href="mailto:hello@example.com">Email me</a>
+        <a class="btn btn-soft btn-lg" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <svg class="outline" id="outline" viewBox="0 0 1000 420" aria-hidden="true">
+        <path class="draw" d="M80 420 C 80 160, 280 30, 500 30 C 720 30, 920 160, 920 420"/>
+        <path class="draw d2" d="M405 170 c -28 -6 -48 18 -40 50 l 22 80 c 8 30 40 40 58 22 c 14 -14 14 -34 6 -58 l -18 -62 c -6 -18 -16 -28 -28 -32 z"/>
+        <path class="draw d3" d="M590 150 c -26 -2 -42 22 -34 52 l 22 80 c 8 30 40 40 58 22 c 14 -14 14 -34 6 -58 l -18 -62 c -8 -22 -20 -32 -34 -34 z"/>
+      </svg>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div class="foot-brand">
+      <a class="brand" href="#top"><span class="mascot mascot-sm" aria-hidden="true"><i></i><i></i></span>Phuong</a>
+      <p class="muted small">© 2026 Phuong</p>
+      <button class="theme" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+    </div>
+    <div class="foot-cols">
+      <div><h4>Projects</h4><ul id="footProjects"></ul></div>
+      <div><h4>Elsewhere</h4><ul><li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:hello@example.com">Email</a></li><li><a href="#">X / Twitter</a></li></ul></div>
+      <div><h4>This site</h4><ul><li><a href="#stack">Stack</a></li><li><a href="#faq">FAQ</a></li><li><a href="#top">Back to top</a></li></ul></div>
+    </div>
+  </footer>
+
+</body>
+</html>
